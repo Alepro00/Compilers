@@ -1,0 +1,34 @@
+Anno 1997
+?????
+Fascia 1: 0,0 -> 35,5 -> € 0,3/mc
+Fascia 2: 35,51 -> 70,2 -> € 0,8/mc
+Fascia 3: 70,21 -> 110,6 -> € 1,6/mc
+Fascia 4: 110,7 -> -> € 2,9/mc
+Fascia 5: 176,6 -> -> € 4,2/mc
+*****
+COSTI AGGIUNTIVI
+costo dell'energia elettrica: € 0,3/mc
+Canone fognatura: € 0,2/mc
+Nolo contatore: € 1,8.
+I.V.A.: 12%
+#####
+Gwen Stefani, STFGWN69T41H501Z, 512, 890
+Ricky Martin, MTRRCK71A23H501E, 583, 701
+Tupac Shakur, SHKTPC71L17H501M, 687, 953
+Michael Jackson, JCKMHL58M25H501R, 145, 726
+Elton John, JNHLTN47M02H501L, 258, 700
+Whitney Houston, HTNWNN70M41H501P, 106, 788
+Lauryn Hill, HLLLRN72R91H501J, 718, 800
+Phil Collins, CLLPLH51P15H501N, 752, 994
+George Michael, MCHGRG63S41H501F, 834, 999
+Sarah McLachlan, MCLSRH68C43H501A, 913, 987
+Chris Cornell, CRNCHS64D72H501T, 755, 932
+Kurt Cobain, CBNKRT67M01H501W, 345, 543
+Sheryl Crow, CRWSRL62M64H501K, 399, 654
+
+
+
+
+
+
+

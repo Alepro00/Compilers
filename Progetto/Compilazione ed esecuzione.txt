@@ -1,0 +1,5 @@
+bison parser.y -d
+flex scanner.fl
+gcc parser.tab.c lex.yy.c symb.c
+
+a < input\giusto1.txt

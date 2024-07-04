@@ -1,0 +1,31 @@
+Anno 2021
+?????
+Fascia 1: 0,0 -> 32,5 -> € 0,3/mc
+Fascia 2: 32,51 -> 65,2 -> € 0,8/mc
+Fascia 3: 65,3 -> 104,6 -> € 1,6/mc
+Fascia 4: 104,7 -> 132,5 -> € 2,9/mc
+Fascia 5: 132,6 -> -> € 4,2/mc
+*****
+COSTI AGGIUNTIVI
+costo dell'energia elettrica: € 0,2/mc
+Canone fognatura: € 0,4/mc
+Nolo contatore: € 3,1.
+I.V.A.: 22%
+#####
+Dante Alighieri, DNTAGI98W34N212P, 216, 297
+Giuseppe Garibaldi, GRBGSP09V11H463X, 123, 302
+Napoleone Bonaparte, BNPNPL34N76F225K, 341, 400
+Leonardo Da Vinci, DVNLNR32K34S212L, 234, 394
+Romeo Montecchi, MNTRMO21A87Q834Q, 656, 745
+Giulietta Capuleti, CPLGLT38Y23F232N, 767, 810
+Leonardo Sciascia, SCSLNR44U22V343X, 384, 433
+Giuseppe Verdi, VRDGSP90A98C768P, 111, 231
+Alessandro Manzoni, MNZLSN19H73B427K, 678, 785
+Giuseppe Verga,	VRGGSP08K54V453F, 654, 732
+Giacomo Leopardi, LPDGCM65L23C987W, 895, 967
+Giacomo Puccini, PCCGCM99J09P276H, 435, 677
+Ugo Foscolo, FSCGUO96T16L736T, 100, 120
+Guglielmo Marconi, MRCGLM87H54C165K, 321, 453
+Nelson Mandela, MNDNLS23W90Z234Q, 375, 670
+Fidel Castro, CSTFDL75E14Z504S, 457, 987
+

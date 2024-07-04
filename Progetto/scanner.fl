@@ -1,0 +1,78 @@
+%{
+	#include <stdlib.h>
+	#include <string.h>
+	#include "parser.tab.h"
+	char* sostituisci_carattere(char *stringa, char vecchio, char nuovo);
+%}
+
+%option noyywrap
+
+
+numero                  [0-9]
+lg                      [A-ZÀÁÈÉÌÒÙ]            
+lp                      [a-zàèéìòù]   
+
+anno                    [12]{numero}{3}       
+numero_intero           {numero}+
+numero_reale            {numero_intero}([,]{numero_intero})?                           
+
+
+
+nominativo              {lg}{lp}+([ ]{lg}{lp}+)+
+codice_fiscale          {lg}{6}{numero}{2}{lg}{1}{numero}{2}{lg}{1}{numero}{3}{lg}{1}
+
+%%
+
+"Anno"                                      {return ANNO;}
+"?????"                                     {return SEP_SEZIONE;}
+"Fascia"                                    {return FASCIA;}
+":"                                         {return DUEPUNTI;}
+","                                         {return VIRGOLA;}
+"->"                                        {return FRECCIA;}
+
+"*****"                                     {return SEP_SEZIONE2;}
+
+"costo dell'energia elettrica:"             {return ELETTRICA;}
+"Canone fognatura:"                         {return FOGNATURA;}
+"Nolo contatore:"                           {return CONTATORE;}
+"/mc"                                       {return METROCUBO;}
+"I.V.A.:"                                    {return IVA;}
+"%"                                         {return PERCENTUALE;}
+"."                                         {return PUNTO;}
+"€"											{return EURO;}
+
+"#####"                                     {return SEP_SEZIONE3;}
+
+{anno}                                      {yylval.intero  =   atoi(yytext); return ANNO_VAL;}
+{numero_intero}                             {yylval.intero  =   atoi(yytext); return INTERO;}
+{numero_reale}                              {yylval.reale 	=   atof(sostituisci_carattere(yytext,',', '.')); return REALE;}
+
+{nominativo}                                {yylval.stringa = strdup(yytext);    return NOMINATIVO;}
+{codice_fiscale}                            {yylval.stringa = strdup(yytext);    return CODICEF;}
+
+
+[ \t\n] |
+.       ;
+%%
+/*Funzione che si occupa di sostituire la virgola con il punto*/
+char* sostituisci_carattere(char *stringa, char vecchio, char nuovo) {
+	
+	char *nuova_stringa = malloc(strlen(stringa) + 1);
+	if (!nuova_stringa) {
+		fprintf(stderr, "Errore di allocazione\n");
+		exit(1);
+	}
+
+	char *p = nuova_stringa;
+	while (*stringa) {
+		*p = (*stringa == vecchio) ? nuovo : *stringa;
+		p++;
+		stringa++;
+	}
+	*p = '\0';
+
+	return nuova_stringa;
+}
+
+	
+	
